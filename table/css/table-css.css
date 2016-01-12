@@ -1,0 +1,20 @@
+ td {
+     text-align: center;
+     line-height: 2em;
+     background: #f2f2f2;
+ }
+ 
+ th {
+     line-height: 2em;
+     background: #C0392B;
+     color: #FFF;
+ }
+ 
+ table {
+     border-color: #FFFFFF;
+ }
+ 
+ .SP {
+     background: #E67E22;
+     color: #FFF;
+ }
