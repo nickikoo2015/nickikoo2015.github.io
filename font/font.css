@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "SentyTEA 新蒂下午茶体";
+    src: url (“SentyTEA-Platinum.ttf”);
+}
+
+
+/* 回首頁-start */
+
+i {
+    color: #BFD3C1;
+    margin-top: 10px;
+}
+
+.btn {
+    display: block;
+    height: 50px;
+    width: 50px;
+    background: #4C6663;
+    border-radius: 50%;
+    position: relative;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+i:hover,
+.btn:hover > i {
+    color: #FFF;
+}
+
+.btn:hover {
+    background: #033;
+}
+
+.btn:active {
+    background: #033;
+}
+
+
+/* 回首頁-end */
+
+div {
+    font-family: Prociono, "微軟正黑體", 新細明體;
+}
+
+h1,
+h2,
+h4,
+th {
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: Pacifico;
+    font-size: 5em;
+    font-weight: 300;
+    color: #4C6663;
+}
+
+h2 {
+    font-family: "SentyTEA 新蒂下午茶体", "微軟正黑體", 新細明體;
+    font-size: 2em;
+    font-weight: 300;
+    color: #3F403F;
+    padding-bottom: 20px;
+}
+
+h4 {
+    color: #ff5050;
+}
+
+td {
+    padding: 0 5px 5px;
+}
+
+
+/* 日曆排版 */
+
+#calendar {
+    width: 250px;
+    padding: 1.5em 3em;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media only screen and (min-width: 760px) {
+    #calendar {
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #calendar {
+        float: center;
+    }
+}
+
+
+/* 上課日 */
+
+.circle {
+    border-radius: 50%;
+    padding-bottom: 8px;
+    color: #59C9A5;
+    position: relative;
+    font-weight: 700;
+}
+
+.circle:hover {
+    background: #4C6663;
+}
+
+
+/* 課程大綱 */
+
+#course {
+    display: none;
+    position: absolute;
+    background-color: #BFD3C1;
+    color: #4C6663;
+    min-width: 280px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    padding: 12px 16px;
+    z-index: 100;
+    top: -10px;
+    left: -320px;
+    font-family: Open Sans, "微軟正黑體";
+}
+
+.circle:hover > #course {
+    display: block;
+}
