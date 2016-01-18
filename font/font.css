@@ -1,6 +1,7 @@
 @font-face {
     font-family: "SentyTEA 新蒂下午茶体";
-    src: url (“SentyTEA-Platinum.ttf”);
+    src: url ("SentyTEA-Platinum.ttf");
+    src: url (http: //www.sentyfont.com/index_htm_files/SentyTEA-Platinum.ttf);
 }
 
 
@@ -23,8 +24,7 @@ i {
     vertical-align: middle;
 }
 
-i:hover,
-.btn:hover > i {
+i:hover, .btn:hover > i {
     color: #FFF;
 }
 
@@ -43,10 +43,7 @@ div {
     font-family: Prociono, "微軟正黑體", 新細明體;
 }
 
-h1,
-h2,
-h4,
-th {
+h1, h2, h4, th {
     font-size: 100%;
     font-weight: normal;
     margin: 0;
