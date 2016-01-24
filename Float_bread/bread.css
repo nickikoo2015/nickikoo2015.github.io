@@ -1,0 +1,88 @@
+ul li {
+    float: left;
+    display: block;
+    background: #9a5927;
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+ul li a {
+    color: #F9F59A;
+    text-decoration: none;
+}
+
+ul li ul {
+    display: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li:hover {
+    background: #ba7947;
+}
+
+ul li ul li:hover {
+    background: #f9f59A;
+}
+
+ul li ul li:hover a {
+    color: #9a5927;
+}
+
+section ul {
+    background: #9a5927;
+    height: 50px;
+}
+
+.list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*background: #9a5927*/
+}
+
+.list ul {
+    width: 100%;
+    background: #9a5927;
+}
+
+h2 {
+    text-align: center;
+    color: #9a5927;
+    font-weight: bold;
+    font-size: 2em;
+    border: 2px dashed #9a5927;
+    line-height: 1.5em;
+}
+
+h4 {
+    text-align: center;
+    text-decoration: underline;
+    color: #9a5927;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.center {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#good,
+#bad,
+#feature {
+    background: #f9f59A;
+    width: 30%;
+    float: left;
+    margin: 10px;
+}
+
+p {
+    padding: 10px;
+    font-size: 10px;
+}
