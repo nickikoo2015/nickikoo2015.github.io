@@ -13,15 +13,15 @@
 <div style="width:320px;">
 <h1>Guess Number</h1>
 <div class="in">
-  <input type="number" name="N1" value="0" class="in-n" min="0" max="9" oninput="checkNumLength(this)"/>
+  <input type="number" name="N1" value="0" class="in-n" maxlength="1" min="0" max="9" oninput="checkNumLength(this)" onkeyup="autoFocus(this, 'N2')"/>
 </div>
 <div class="in">
-  <input type="number" name="N2" value="0" class="in-n" min="0" max="9" oninput="checkNumLength(this)"/>
+  <input type="number" name="N2" value="0" class="in-n" maxlength="1" min="0" max="9" oninput="checkNumLength(this)" onkeyup="autoFocus(this, 'N3')"/>
 </div>
 <div class="in">
-  <input type="number" name="N3" value="0" class="in-n" min="0" max="9" oninput="checkNumLength(this)"/></div>
+  <input type="number" name="N3" value="0" class="in-n" maxlength="1" min="0" max="9" oninput="checkNumLength(this)" onkeyup="autoFocus(this, 'N4')"/></div>
 <div class="in">
-  <input type="number" name="N4" value="0" class="in-n" min="0" max="9" oninput="checkNumLength(this)"/></div>
+  <input type="number" name="N4" value="0" class="in-n" maxlength="1" min="0" max="9" oninput="checkNumLength(this)"/></div>
 <div class="clear"></div>
 
 <div><button type="submit" class="guess" onclick="handleClick()">Guess</button></div>

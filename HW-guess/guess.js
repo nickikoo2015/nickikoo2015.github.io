@@ -73,10 +73,18 @@ function reset() {
 }
 
 function checkNumLength(object) {
+    console.log("length=" + object.value.length);
     if (object.value.length > 1)
         object.value = object.value.slice(0, 1);
 }
 
+function autoFocus(fromfield, tofield) {
+    var length = fromfield.value.length;
+    if (length >= 1) {
+        document.getElementsByName(tofield)[0].value = "";
+        document.getElementsByName(tofield)[0].focus();
+    }
+}
 function show() {
     alert("The answer is " + answer);
 }
