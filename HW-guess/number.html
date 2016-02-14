@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css"  href="n-css.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<title>1A2B</title>
+</head>
+
+<body>
+<div class="container" align="center"><div style="width:50%;">
+<div style="width:320px;">
+<h1>Guess Number</h1>
+<div class="in">
+  <input type="number" name="N1" value="0" class="in-n" min="0" max="9" oninput="checkNumLength(this)"/>
+</div>
+<div class="in">
+  <input type="number" name="N2" value="0" class="in-n" min="0" max="9" oninput="checkNumLength(this)"/>
+</div>
+<div class="in">
+  <input type="number" name="N3" value="0" class="in-n" min="0" max="9" oninput="checkNumLength(this)"/></div>
+<div class="in">
+  <input type="number" name="N4" value="0" class="in-n" min="0" max="9" oninput="checkNumLength(this)"/></div>
+<div class="clear"></div>
+
+<div><button type="submit" class="guess" onclick="handleClick()">Guess</button></div>
+</div>
+<div class="clear"></div>
+<hr />
+<div style="width:280px;">
+<div class="left"><button type="reset" onclick="reset()"><i class="material-icons">autorenew</i> <div class="btnmiddle">Reset</div></button></div>
+<div class="left"><button type="show" onclick="show()"><i class="material-icons">visibility</i> <div class="btnmiddle"> Show Answer</div>	</button></div>
+</div>
+<div class="clear">
+  <table id="log" border="0" cellpadding="0" cellspacing="5">
+    <tr><td>Rounds</td><td>Your Guess</td><td>Answer</td></tr>
+  </table>
+</div>
+</div>
+</div></div>
+
+<script type="text/javascript" src="guess.js"></script>
+</body>
+</html>
