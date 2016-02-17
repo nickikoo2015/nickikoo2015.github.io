@@ -3,8 +3,14 @@
 .clear {
 	clear:both;
 }
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
 h1{
 	line-height: 1.5em;
+	font-family: 'Poiret One', cursive;
+	color: darkslateblue;
+	font-size: 3em;
 }
 input {
 	width:2em;
@@ -37,6 +43,8 @@ color: #FF6666 !important;
 }
 .in {
 	float:left;
+	margin: 0 20px;
+	width: 50px;
 	/*
 	width:5em;
 	height:5em;
@@ -72,10 +80,12 @@ button:hover{
 }
 .container {
 	width: 100%;
+	min-width: 650px;
 }
 .left {
 	float:left;
-	margin: .5em;
+	margin: 0 2%;
+	width: 45%;
 }
 .btnmiddle {
 	float:right; 
@@ -86,6 +96,8 @@ td {
 	padding: .5em 1.2em;
 	text-align: center;
 	letter-spacing: 1px;
+	font-family: 'Lato', sans-serif;
+	color: #666;
 }
 
 input[type=number]::-webkit-outer-spin-button,
