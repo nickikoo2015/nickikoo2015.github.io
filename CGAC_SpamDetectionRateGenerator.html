@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CGAC Spam Detection Rate</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style type="text/css">
+body {
+	font-family: "Helvetica Neue","Helvetica",CircularBlack, Arial,sans-serif;
+	font-size: 16px;
+    line-height: 1em;
+    color: #484848;
+	text-align:center;
+}
+i {
+	font-size: 100px !important;
+	color: #FBBD08 !important;
+}
+button {
+	font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+	padding: .8rem 1rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+	background-color: rgba(72, 72, 72, 0.3);
+    color: #FFF;
+    text-shadow: none;
+	border: none;
+	outline: 0;
+}
+button:hover {
+    background-color: #daa300;
+	border-color: #daa300;
+}
+#rate, #link {
+    font-size: 18px;
+    line-height: 1.5em;
+    display: inline-block;
+    color: #aaa;
+    border-radius: 30px;
+    border: 2px solid;
+    border-color: rgba(72, 72, 72, 0.1);
+    padding: 8px 24px 9px;    
+    text-decoration: none;
+	width: 420px;
+	height: 30px;
+	text-align: center;
+	margin-top: 2em;
+}
+</style>
+</head>
+
+<body>
+<i class="material-icons">track_changes</i>
+<h2>CGAC Spam Detection Rate</h2>
+<!--
+<div>
+	<div id="rate"></div>
+</div>
+-->
+<button type="submit" id="submit" onclick="randomrate();">Generate</button>
+<div>
+	<div id="link"></div>
+</div>
+<div id="rateimg"></div>
+<script type="text/javascript">
+function randomrate(){
+	var n= randomIntFromInterval(0, 50) * 0.01 + 99.50;
+//	document.getElementById("rate").innerHTML = n + '%';
+	var a= Number(n);
+	var b= Math.round((a - 99) * 100);	
+	document.getElementById("rateimg").innerHTML = '<img width="173" height="159" src="http://www.cellopoint.com/tw/files/image/spam_report/spam_detection_' + b + '.png">';
+	document.getElementById("link").innerHTML = '/tw/files/image/spam_report/spam_detection_' + b + '.png';
+
+}
+function randomIntFromInterval(min,max)
+{
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
+
+</script>
+</body>
+</html>
